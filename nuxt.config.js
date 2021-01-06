@@ -21,7 +21,6 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~/plugins/primevue.js',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -31,8 +30,15 @@ export default {
   buildModules: [
   ],
 
+  primevue: {
+    theme: 'saga-blue',
+    ripple: true,
+    components: ['InputText','Button', 'Toast'],
+  },
+
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    'primevue/nuxt'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
