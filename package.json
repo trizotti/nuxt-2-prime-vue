@@ -11,8 +11,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
-    "primevue": "2.6.0",
-    "primeicons": "4.1.0"
+    "primevue": "2.8.0",
+    "primeicons": "5.0.0"
   },
   "devDependencies": {}
 }
