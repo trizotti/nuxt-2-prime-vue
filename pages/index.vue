@@ -1,18 +1,15 @@
 <template>
     <div class="container">
         <div>
-            <Logo />
-            <Toast />
-            
-            <form @submit.prevent="greet">
-                <InputText type="text" v-model="text"/>
-                <Button type="submit" label="Submit"/>
-            </form>
+            <Loader />
+            <ProgressSpinner :style="{ width, height }" stroke-width="8" />
         </div>
     </div>
 </template>
 
 <script>
+import Loader from "../components/Loader.vue"
+
 export default {
     data() {
         return {
@@ -35,4 +32,21 @@ export default {
     justify-content: center;
     align-items: center;
 }
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+      stroke: blue;
+    }
+    40% {
+      stroke: blue;
+    }
+    66% {
+      stroke: blue;
+    }
+    80%,
+    90% {
+      stroke: blue;
+    }
+  }
 </style>
